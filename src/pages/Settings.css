@@ -1,0 +1,28 @@
+body.dark-mode {
+  background: #181818;
+  color: #f1f1f1;
+}
+body.dark-mode .dashboard-card,
+body.dark-mode .settings-container {
+  background: #232323;
+  color: #f1f1f1;
+}
+.settings-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+body.dark-mode .settings-container {
+  background: #232323;
+  color: #f1f1f1;
+}
+.theme-toggle {
+  margin-top: 24px;
+  font-size: 1.1rem;
+}
+.theme-toggle input[type="checkbox"] {
+  margin-right: 10px;
+}

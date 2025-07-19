@@ -58,7 +58,7 @@ const Dashboard: React.FC = () => {
               <div className="card-icon">⚙️</div>
               <h3>Ayarlar</h3>
               <p>Hesap ayarlarınızı düzenleyin</p>
-              <button className="card-btn">Ayarlar</button>
+              <button className="card-btn" onClick={() => navigate('/settings')}>Ayarlar</button>
             </div>
           </div>
 
