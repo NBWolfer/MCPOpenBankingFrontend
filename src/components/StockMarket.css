@@ -1,0 +1,150 @@
+.stock-market-container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 100%;
+  max-width: 900px;
+}
+
+.stock-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.stock-header h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.stock-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.error-message {
+  background-color: #fee6e6;
+  color: #dc3545;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.loading-message {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.positive {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.negative {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.stock-table {
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.positive {
+  color: #28a745;
+}
+
+.negative {
+  color: #dc3545;
+}
+
+.stock-chart {
+  margin-top: 20px;
+  height: 200px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.recharts-legend-wrapper {
+  padding-top: 5px !important;
+}
+
+.recharts-tooltip-wrapper {
+  background: white !important;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.recharts-default-tooltip {
+  background-color: white !important;
+  border: none !important;
+  border-radius: 4px;
+  padding: 8px 12px !important;
+}
+
+/* Dark mode support */
+body.dark-mode .stock-market-container {
+  background: #232323;
+  color: #f1f1f1;
+}
+
+body.dark-mode th {
+  background-color: #2c2c2c;
+  color: #f1f1f1;
+}
+
+body.dark-mode td {
+  border-bottom-color: #333;
+}
+
+body.dark-mode .positive {
+  color: #4caf50;
+}
+
+body.dark-mode .negative {
+  color: #f44336;
+}

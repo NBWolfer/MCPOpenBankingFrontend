@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Dashboard.css';
+import StockMarket from '../components/StockMarket';
 
 const Dashboard: React.FC = () => {
   const navigate = useNavigate();
@@ -27,10 +28,7 @@ const Dashboard: React.FC = () => {
 
       <main className="dashboard-main">
         <div className="dashboard-content">
-          <div className="welcome-section">
-            <h2>Dashboard</h2>
-            <p>Bankacılık işlemlerinizi buradan yönetebilirsiniz.</p>
-          </div>
+          <StockMarket />
 
           <div className="dashboard-grid">
             <div className="dashboard-card">
