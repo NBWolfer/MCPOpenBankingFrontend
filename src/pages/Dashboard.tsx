@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Dashboard.css';
 import StockMarket from '../components/StockMarket';
+import Portfolio from '../components/Portfolio';
 
 const Dashboard: React.FC = () => {
   const navigate = useNavigate();
@@ -28,8 +29,9 @@ const Dashboard: React.FC = () => {
 
       <main className="dashboard-main">
         <div className="dashboard-content">
+          <Portfolio />
           <StockMarket />
-
+          
           <div className="dashboard-grid">
             <div className="dashboard-card">
               <div className="card-icon">💳</div>
