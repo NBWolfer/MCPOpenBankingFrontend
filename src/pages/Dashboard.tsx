@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Dashboard.css';
 import StockMarket from '../components/StockMarket';
 import Portfolio from '../components/Portfolio';
+import ChatBot from '../components/ChatBot';
 
 const Dashboard: React.FC = () => {
   const navigate = useNavigate();
@@ -27,69 +28,16 @@ const Dashboard: React.FC = () => {
         </div>
       </header>
 
-      <main className="dashboard-main">
-        <div className="dashboard-content">
+      <main className="dashboard-content">
+        <section className="left-panel">
           <Portfolio />
+        </section>
+        
+        <section className="right-panel">
           <StockMarket />
-          
-          <div className="dashboard-grid">
-            <div className="dashboard-card">
-              <div className="card-icon">💳</div>
-              <h3>Hesaplarım</h3>
-              <p>Tüm hesaplarınızı görüntüleyin ve yönetin</p>
-              <button className="card-btn">Görüntüle</button>
-            </div>
-
-            <div className="dashboard-card">
-              <div className="card-icon">📊</div>
-              <h3>İşlem Geçmişi</h3>
-              <p>Geçmiş işlemlerinizi inceleyin</p>
-              <button className="card-btn">Görüntüle</button>
-            </div>
-
-            <div className="dashboard-card">
-              <div className="card-icon">💸</div>
-              <h3>Para Transferi</h3>
-              <p>Güvenli para transferi yapın</p>
-              <button className="card-btn">Transfer Yap</button>
-            </div>
-
-            <div className="dashboard-card">
-              <div className="card-icon">⚙️</div>
-              <h3>Ayarlar</h3>
-              <p>Hesap ayarlarınızı düzenleyin</p>
-              <button className="card-btn" onClick={() => navigate('/settings')}>Ayarlar</button>
-            </div>
-          </div>
-
-          <div className="recent-transactions">
-            <h3>Son İşlemler</h3>
-            <div className="transaction-list">
-              <div className="transaction-item">
-                <div className="transaction-info">
-                  <span className="transaction-desc">Market Alışverişi</span>
-                  <span className="transaction-date">20 Temmuz 2025</span>
-                </div>
-                <span className="transaction-amount negative">-150.00 ₺</span>
-              </div>
-              <div className="transaction-item">
-                <div className="transaction-info">
-                  <span className="transaction-desc">Maaş Ödemesi</span>
-                  <span className="transaction-date">18 Temmuz 2025</span>
-                </div>
-                <span className="transaction-amount positive">+5,000.00 ₺</span>
-              </div>
-              <div className="transaction-item">
-                <div className="transaction-info">
-                  <span className="transaction-desc">Elektrik Faturası</span>
-                  <span className="transaction-date">15 Temmuz 2025</span>
-                </div>
-                <span className="transaction-amount negative">-287.50 ₺</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        </section>
       </main>
+      <ChatBot />
     </div>
   );
 };
